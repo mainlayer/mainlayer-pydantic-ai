@@ -31,7 +31,7 @@ def _make_response(status_code: int, json_body: object) -> httpx.Response:
     return httpx.Response(
         status_code=status_code,
         json=json_body,
-        request=httpx.Request("GET", "https://api.mainlayer.xyz/"),
+        request=httpx.Request("GET", "https://api.mainlayer.fr/"),
     )
 
 

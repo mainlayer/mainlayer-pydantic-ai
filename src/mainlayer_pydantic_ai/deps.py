@@ -22,7 +22,7 @@ class MainlayerDeps:
     def __post_init__(self) -> None:
         if self.client is None:
             self.client = httpx.AsyncClient(
-                base_url="https://api.mainlayer.xyz",
+                base_url="https://api.mainlayer.fr",
                 headers={"Authorization": f"Bearer {self.api_key}"},
                 timeout=httpx.Timeout(30.0),
             )

@@ -10,7 +10,7 @@ readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.11"
 authors = [
-    { name = "Mainlayer", email = "support@mainlayer.xyz" },
+    { name = "Mainlayer", email = "support@mainlayer.fr" },
 ]
 keywords = ["mainlayer", "pydantic-ai", "payments", "ai-agents", "monetization"]
 classifiers = [
@@ -39,7 +39,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://mainlayer.xyz"
+Homepage = "https://mainlayer.fr"
 Documentation = "https://github.com/mainlayer/mainlayer-pydantic-ai"
 Repository = "https://github.com/mainlayer/mainlayer-pydantic-ai"
 "Bug Tracker" = "https://github.com/mainlayer/mainlayer-pydantic-ai/issues"

@@ -1,6 +1,6 @@
 # mainlayer-pydantic-ai
 
-PydanticAI tools and agent factory for [Mainlayer](https://mainlayer.xyz) — the payments layer built for AI agents.
+PydanticAI tools and agent factory for [Mainlayer](https://mainlayer.fr) — the payments layer built for AI agents.
 
 Integrate payment-gating, resource creation, access verification, and revenue analytics directly into your PydanticAI agents with a few lines of code.
 
@@ -90,7 +90,7 @@ deps = MainlayerDeps(api_key="ml_live_...")
 # Or bring your own client (useful for testing)
 import httpx
 custom_client = httpx.AsyncClient(
-    base_url="https://api.mainlayer.xyz",
+    base_url="https://api.mainlayer.fr",
     headers={"Authorization": "Bearer ml_live_..."},
 )
 deps = MainlayerDeps(api_key="ml_live_...", client=custom_client)
@@ -175,7 +175,7 @@ Returns an analytics object with `total_revenue_usd`, `transaction_count`, and `
 
 All requests are authenticated with your Mainlayer API key via the `Authorization: Bearer <api_key>` header. Keys are never logged or exposed in error messages.
 
-Get your API key at [mainlayer.xyz](https://mainlayer.xyz).
+Get your API key at [mainlayer.fr](https://mainlayer.fr).
 
 ## License
 
