@@ -19,6 +19,7 @@ Quickstart::
 """
 
 from .agent import create_mainlayer_agent
+from .decorator import MainlayerPaywallDep, mainlayer_tool
 from .deps import MainlayerDeps
 from .tools import (
     check_access,
@@ -31,6 +32,8 @@ from .tools import (
 
 __all__ = [
     "MainlayerDeps",
+    "MainlayerPaywallDep",
+    "mainlayer_tool",
     "mainlayer_tools",
     "create_resource",
     "pay_for_resource",

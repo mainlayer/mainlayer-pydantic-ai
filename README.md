@@ -1,16 +1,20 @@
 # mainlayer-pydantic-ai
 
-PydanticAI tools and agent factory for [Mainlayer](https://mainlayer.fr) — the payments layer built for AI agents.
+[![PyPI](https://img.shields.io/pypi/v/mainlayer-pydantic-ai.svg)](https://pypi.org/project/mainlayer-pydantic-ai/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Integrate payment-gating, resource creation, access verification, and revenue analytics directly into your PydanticAI agents with a few lines of code.
+Production-ready PydanticAI integration for [Mainlayer](https://mainlayer.fr) — the payment infrastructure for AI agents.
+
+Build payment-aware AI agents with clean dependency injection, async-first design, and full type safety. Monetize agent outputs, implement pay-gated services, and enable autonomous marketplace interactions.
 
 ## Features
 
 - Five production-ready tool functions covering the full Mainlayer API surface
-- Typed `MainlayerDeps` dataclass for clean dependency injection
+- Typed `MainlayerDeps` dataclass for clean dependency injection and testing
 - `create_mainlayer_agent()` factory — one call wires up every tool
-- Full `pytest-asyncio` test suite with mocked HTTP (25+ tests, no network required)
-- Three example agents: vendor, buyer, and multi-step pipeline
+- Full async support with `httpx.AsyncClient` for high-performance agents
+- `@mainlayer_tool` decorator for extending with custom payment tools
+- Comprehensive test suite: 25+ tests, no network required, all mocked HTTP
+- Three production examples: vendor agent, buyer agent, multi-step payment pipeline
 
 ## Installation
 
@@ -21,6 +25,8 @@ pip install mainlayer-pydantic-ai
 Requires Python 3.11+ and `pydantic-ai>=0.0.9`.
 
 ## Quickstart
+
+Create a payment-aware agent in 10 lines:
 
 ```python
 import asyncio
@@ -42,6 +48,8 @@ async def main():
 
 asyncio.run(main())
 ```
+
+The agent automatically has access to all five Mainlayer tools.
 
 ## Available Tools
 
